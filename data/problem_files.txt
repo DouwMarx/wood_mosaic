@@ -1,0 +1,4 @@
+Cropping unsuccessful for: 0202.png with threshold:  46
+Cropping unsuccessful for: 0465.png with threshold:  46
+Cropping unsuccessful for: 0495.png with threshold:  46
+Cropping unsuccessful for: 1011.png with threshold:  46

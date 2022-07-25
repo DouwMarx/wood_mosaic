@@ -50,8 +50,8 @@ def crop_rotated(contour, image, name,fixed_sidelength=False):
         croppedW = int(fixed_sidelength)
         croppedH = int(fixed_sidelength)
 
-    croppedRotated = cv2.getRectSubPix(cropped, (int(croppedW * mult), int(croppedH * mult)),
+    cropped_and_rotated = cv2.getRectSubPix(cropped, (int(croppedW * mult), int(croppedH * mult)),
                                        (size[0] / 2, size[1] / 2))
 
-    cv2.imwrite("cropped_and_rotated" + name + ".jpeg", croppedRotated)
-    return sidelenghts
+    # cv2.imwrite("cropped_and_rotated" + name + ".jpeg", croppedRotated)
+    return cropped_and_rotated, sidelenghts
